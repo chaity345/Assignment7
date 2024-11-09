@@ -1,0 +1,100 @@
+<!-- add two block in main window then make two separate modal window of two block -->
+
+<!-- assignment note on GoodNotes -->
+ <!-- when we need modal window in center of the main window 
+ position:fixed;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+ -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link for css -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <!-- main window start -->
+        
+       
+         <section class="container"> 
+
+             <!-- first block -->
+
+            <div class="mainBlock1">
+                <img class="imgStyle"src="images/pizza.jpg" alt="">
+                <p>a dish of Italian origin consisting of a flat,<br> round base of dough baked with a topping of tomato sauce <br>and cheese, typically with added meat or vegetables.</p>
+                <a class="btn" href="#no1">Click here</a>
+
+
+            </div>
+            <!-- second block -->
+            <div class="mainBlock2">
+                <img class="imgStyle"src="images/burger.jpg" alt="">
+                <p>a dish of Italian origin consisting of a flat,<br> round base of dough baked with a topping of tomato sauce <br>and cheese, typically with added meat or vegetables.</p>
+                <a class="btn" href="#no2">Click here</a>
+
+
+
+            </div>
+
+
+            <!-- modal window 1 -->
+             <div class="modalWindow1" id="no1">
+
+                <div class="windowEelement">
+                    <h1>Here is the information for italian pizza</h1>
+                    <img src="images/italian-cuisine-6903774_640.jpg" alt="">
+                    <br>
+
+                    <div class="exitButton">
+
+
+                    <a href="">X</a>
+
+                </div>
+                
+                </div>
+
+             </div>
+
+
+             <!-- modal window 2 -->
+             <div class="modalWindow2" id="no2">
+
+                <div class="windowEelement">
+                    <h1>Here is the information for beef burger</h1>
+                    <img src="images/hamburger-7951202_640.jpg" alt="">
+                    <br>
+
+                    <div class="exitButton">
+
+
+                    <a href="">X</a>
+
+                </div>
+                
+                </div>
+
+             </div>
+
+
+
+
+        </section>
+        
+    
+
+    
+</body>
+</html>

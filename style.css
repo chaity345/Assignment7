@@ -1,0 +1,106 @@
+body{
+    margin-left: 20px;
+
+}
+.imgStyle{
+    width:75%;
+    height: 100%;
+}
+
+.mainBLock1{
+    border: 2px solid rgb(115, 0, 255);
+    
+
+}
+.container{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap:3px;
+     text-align: center;
+}
+.btn{
+    text-decoration: none;
+    border-width: 3px;
+    background-color: bisque;
+    padding: 3px;
+    
+}
+.modalWindow1{
+    background-color: rgba(141, 136, 136,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+
+.modalWindow2{
+    background-color: rgba(141, 136, 136,0.5);
+    
+    opacity:0;
+    
+     pointer-events: none;
+     /* never moved so we use fixed */
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     bottom:0;
+
+    
+}
+.modalWindow1>div{
+    background-color: antiquewhite;
+    width:60%;
+    height:60%;
+    margin:auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.modalWindow2>div{
+    background-color: antiquewhite;
+    width:60%;
+    height:60%;
+    margin:auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+/* make x on the top right corner */
+.modalWindow1>div{
+    position: relative;
+   
+}
+.modalWindow2>div{
+    position: relative;
+   
+}
+.exitButton{
+    position:absolute;
+    bottom:97%;
+    left:97%
+    
+
+}
+.modalWindow1:target{
+    opacity:1;
+    pointer-events: all;
+}
+.modalWindow2:target{
+    opacity:1;
+    pointer-events: all;
+}
+
+
+
+
+
+
